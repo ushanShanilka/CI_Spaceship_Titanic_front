@@ -1,0 +1,20 @@
+<div [ngClass]="style" class="alt-main bg-skin-ternary">
+  <div class="content">
+    <div class="main-content">
+
+      <img src="{{image}}" alt="">
+
+      <div>
+        <div style=""></div>
+        <div  class="massage text-skin-primary">
+          <div>{{message}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 30px"></div>
+    <div  class="buttons">
+      <button mat-raised-button id="btnYes" color="primary" (click)="onConfirm()" *ngIf="btnAccept!==''">{{btnAccept}}</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+<div class="main">
+
+
+  <div class="form-sec">
+    <form [formGroup]="detailForm">
+
+      <div class="title">
+        <h1>Spaceship Titanic</h1>
+      </div>
+
+
+      <div class="form-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Home Planet</mat-label>
+          <mat-select formControlName="homePlanet">
+            <mat-option value="Earth">Earth</mat-option>
+            <mat-option value="Europa">Europa</mat-option>
+            <mat-option value="Mars">Mars</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Cryosleep</mat-label>
+          <mat-select formControlName="cryosleep">
+            <mat-option value="TRUE">True</mat-option>
+            <mat-option value="FALSE">False</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Destination</mat-label>
+          <input formControlName="destination" matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Age</mat-label>
+          <input formControlName="age" matInput>
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline">
+          <mat-label>VIP</mat-label>
+          <mat-select formControlName="VIP">
+            <mat-option value="TRUE">True</mat-option>
+            <mat-option value="FALSE">False</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>RoomService</mat-label>
+          <input formControlName="roomService" matInput>
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Food Court</mat-label>
+          <input formControlName="foodCourt" matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Shopping Mall</mat-label>
+          <input formControlName="shoppingMall" matInput>
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Spa</mat-label>
+          <input formControlName="spa" matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>VRDeck</mat-label>
+          <input formControlName="VRDeck" matInput>
+        </mat-form-field>
+      </div>
+
+
+      <div class="btn-row">
+        <button mat-raised-button (click)="submit()" color="primary">Result</button>
+      </div>
+    </form>
+  </div>
+</div>
